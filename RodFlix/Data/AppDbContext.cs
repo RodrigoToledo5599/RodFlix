@@ -8,6 +8,7 @@ namespace RodFlix.Data
 		public AppDbContext(DbContextOptions<AppDbContext> Options): base(Options) { }
 		public DbSet <Movies> Movies { get; set; }
 		public DbSet <DmCategories> DmCategories { get; set; }
+		public DbSet <Account> Account { get; set; }
 
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -23,10 +24,35 @@ namespace RodFlix.Data
 				new DmCategories { IdDmCategories = 8, CategorieName = "Documentario"},
 				new DmCategories { IdDmCategories = 9, CategorieName = "Anime"},
 				new DmCategories { IdDmCategories = 10, CategorieName = "80s"},
-				new DmCategories { IdDmCategories = 11, CategorieName = "Romance"}
+				new DmCategories { IdDmCategories = 11, CategorieName = "Romance"},
+				new DmCategories { IdDmCategories = 12, CategorieName = "Zombie"},
+				new DmCategories { IdDmCategories = 13, CategorieName = "Comédia"}
+				);
+			
+			modelBuilder.Entity<Movies>().HasData(
+				new Movies { IdMovie = 1, Title = "Carga Explosiva"},
+				new Movies { IdMovie = 2, Title = "Sonic o filme"},
+				new Movies { IdMovie = 3, Title = "Exterminador do futuro"},
+				new Movies { IdMovie = 4, Title = "One piece film red"},
+				new Movies { IdMovie = 5, Title = "Avatar"},
+				new Movies { IdMovie = 6, Title = "Debi e Loide 2"},
+				new Movies { IdMovie = 7, Title = "Zohan"},
+				new Movies { IdMovie = 8, Title = "Senhor dos anéis 2"},
+				new Movies { IdMovie = 9, Title = "Drive"},
+				new Movies { IdMovie = 10, Title = "Taxi Driver"},
+				new Movies { IdMovie = 11, Title = "Blade runner o caçador de androides"},
+				new Movies { IdMovie = 12, Title = "Homem aranha 2"},
+				new Movies { IdMovie = 13, Title = "Iron man"},
+				new Movies { IdMovie = 14, Title = "Velozes e furiosos"},
+				new Movies { IdMovie = 15, Title = "Rocky"},
+				new Movies { IdMovie = 16, Title = "Rambo the first blood"},
+				new Movies { IdMovie = 17, Title = "Transformers"},
+				new Movies { IdMovie = 18, Title = "Carga Explosiva 2"}
+				);
+
+			modelBuilder.Entity<Account>().HasData(
 				
-
-
+				new Account {IdAccount = 1, Email = "123@gmail.com", Senha = "123"}
 				);
 		}
 	}

@@ -5,17 +5,22 @@ using RodFlix.Models;
 
 namespace RodFlix.Controllers
 {
-	public class MoviesController : Controller
+	[BindProperties]
+	public class MainPageController : Controller
 	{
 		public readonly AppDbContext _db;
-		public MoviesController (AppDbContext db)
+
+		public MainPageController (AppDbContext db)
 		{
 			_db = db;
-		}
+		}	
+
 		public IActionResult Index()
 		{
-			return View();
+			List<Movies> movies = _db.Movies.ToList();
+			return View(movies);
 		}
+
 
 	}
 }

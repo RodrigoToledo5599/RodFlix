@@ -1,0 +1,32 @@
+﻿@model List<Movies>
+
+
+
+<div class="container">
+	<div class="row pt-4">
+		<div class="col-6">
+			<h1 class="text-secondary">
+				<strong>Filmes</strong>
+			</h1>
+		</div>
+	</div>
+</div>
+
+<table class="table table-bordered table-striped">
+	<tbody>
+		@foreach(var obj in Model)
+		{
+			<tr style="border: solid 1px white">
+				<td>
+					<i class="bi bi-arrow-return-right"></i>
+					<h3>@obj.Title</h3>
+				</td>
+			</tr>
+			<tr style="border: solid 1px white">
+				<td>
+					<p>@obj.Description</p>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>

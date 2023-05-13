@@ -1,5 +1,53 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model Account
 @{
+	Layout = null;
 }
+<head>
+
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrapSolar.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/BulkyWeb.styles.css" asp-append-version="true" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+	<form method="post">
+
+		<div class="border p-3 m-5 ">
+			<div class="row pb-2">
+				<h1 class="text-primary">Cadastrar</h1>
+				<hr />
+			</div>
+
+			<div class="mb-3 row p-1">
+				<label asp-for="Email" class="p-0">Email</label>
+				<input asp-for="Email" class="form-control">
+				<span asp-validation-for="Email" class="text-danger"></span>
+			</div>
+
+			<div class="mb-3 row p-1">
+				<label asp-for="Senha" class="p-0">Senha</label>
+				<input asp-for="Senha" class="form-control">
+				<span asp-validation-for="Senha" class="text-danger"></span>
+			</div>
+
+			<div class="row">
+				<div class="col-2">
+					<button type="submit" class="btn btn-primary form-control ml-1" style="width:150px">Cadastrar</button>
+				</div>
+
+				<div class="col-7">
+					<button class="btn btn-primary" style="width:150px"> <a asp-controller="Login" asp-action="Index">Logar</a> </button>
+				</div>
+
+				
+			</div>
+		</div>
+	</form>
+
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+
+
+</body>

@@ -14,10 +14,10 @@ namespace RodFlix.Controllers
 		{
 			_db = db;
 		}
-
+		#region "Pagina de Login"
 		public IActionResult Index(string email, string senha)
 		{
-			bool logadoOuNao = CheckUpDeLoginPost(email, senha);
+			bool logadoOuNao = CheckUpDeLoginGet(email, senha);
 
 			if (logadoOuNao == false)
 				return View();
@@ -26,7 +26,7 @@ namespace RodFlix.Controllers
 				return Redirect("/MainPage/Index/");
 		}
 		[HttpGet]
-		public bool CheckUpDeLoginPost(string email, string senha)
+		public bool CheckUpDeLoginGet(string email, string senha)
 		{
 			conta = _db.Account.Where(c => c.Email == email).FirstOrDefault();
 
@@ -38,6 +38,23 @@ namespace RodFlix.Controllers
 
 			else return true;
 		}
-		
+		#endregion
+
+		#region "Pagina de Cadastro"
+
+		public IActionResult Cadastrar()
+		{
+			return View();
+		}
+
+		[HttpPost]
+		public IActionResult Cadastrar(Account Conta)
+		{
+			_db.Account.Add(Conta);
+			_db.SaveChanges();
+			return View();
+		}
+
+		#endregion
 	}
 }

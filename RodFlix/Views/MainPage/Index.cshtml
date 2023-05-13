@@ -16,17 +16,19 @@
 	<tbody>
 		@foreach(var obj in Model)
 		{
-			<tr style="border: solid 1px white">
-				<td>
-					<i class="bi bi-arrow-return-right"></i>
+			<tr>
+				<td style="border: solid 1px white">
+					
 					<h3>@obj.Title</h3>
 				</td>
-			</tr>
-			<tr style="border: solid 1px white">
 				<td>
 					<p>@obj.Description</p>
 				</td>
+				<td>
+					<hr>
+				</td>
 			</tr>
+
 		}
 	</tbody>
 </table>

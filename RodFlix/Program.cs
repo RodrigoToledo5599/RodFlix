@@ -34,7 +34,7 @@ namespace RodFlix
 			app.MapControllerRoute(
 				name: "default",
 				//pattern: "Movies/welcome?id=8");
-				pattern: "{controller=MainPage}/{action=Index}/{id?}");
+				pattern: "{controller=Login}/{action=Index}/{id?}");
 			app.Run();
 		}
 	}

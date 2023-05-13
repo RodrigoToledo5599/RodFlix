@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RodFlix.Data;
 
@@ -11,9 +12,11 @@ using RodFlix.Data;
 namespace RodFlix.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230513081327_Second_one")]
+    partial class Second_one
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -50,12 +53,6 @@ namespace RodFlix.Migrations
                             IdAccount = 1,
                             Email = "123@gmail.com",
                             Senha = "123"
-                        },
-                        new
-                        {
-                            IdAccount = 2,
-                            Email = "emailgenerico@gmail.com",
-                            Senha = "senha123"
                         });
                 });
 

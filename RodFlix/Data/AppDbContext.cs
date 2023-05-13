@@ -30,29 +30,30 @@ namespace RodFlix.Data
 				);
 			
 			modelBuilder.Entity<Movies>().HasData(
-				new Movies { IdMovie = 1, Title = "Carga Explosiva"},
-				new Movies { IdMovie = 2, Title = "Sonic o filme"},
-				new Movies { IdMovie = 3, Title = "Exterminador do futuro"},
-				new Movies { IdMovie = 4, Title = "One piece film red"},
-				new Movies { IdMovie = 5, Title = "Avatar"},
-				new Movies { IdMovie = 6, Title = "Debi e Loide 2"},
-				new Movies { IdMovie = 7, Title = "Zohan"},
-				new Movies { IdMovie = 8, Title = "Senhor dos anéis 2"},
-				new Movies { IdMovie = 9, Title = "Drive"},
-				new Movies { IdMovie = 10, Title = "Taxi Driver"},
-				new Movies { IdMovie = 11, Title = "Blade runner o caçador de androides"},
-				new Movies { IdMovie = 12, Title = "Homem aranha 2"},
-				new Movies { IdMovie = 13, Title = "Iron man"},
-				new Movies { IdMovie = 14, Title = "Velozes e furiosos"},
-				new Movies { IdMovie = 15, Title = "Rocky"},
-				new Movies { IdMovie = 16, Title = "Rambo the first blood"},
-				new Movies { IdMovie = 17, Title = "Transformers"},
-				new Movies { IdMovie = 18, Title = "Carga Explosiva 2"}
+				new Movies { IdMovie = 1, Title = "Carga Explosiva", LengthMinutes=103},
+				new Movies { IdMovie = 2, Title = "Sonic o filme", LengthMinutes = 99 },
+				new Movies { IdMovie = 3, Title = "Exterminador do futuro", LengthMinutes = 130 },
+				new Movies { IdMovie = 4, Title = "One piece film red", LengthMinutes = 100 },
+				new Movies { IdMovie = 5, Title = "Avatar", LengthMinutes = 140 },
+				new Movies { IdMovie = 6, Title = "Debi e Loide 2", LengthMinutes = 96 },
+				new Movies { IdMovie = 7, Title = "Zohan", LengthMinutes = 90 },
+				new Movies { IdMovie = 8, Title = "Senhor dos anéis 2", LengthMinutes = 180 },
+				new Movies { IdMovie = 9, Title = "Drive", LengthMinutes = 103 },
+				new Movies { IdMovie = 10, Title = "Taxi Driver", LengthMinutes = 110 },
+				new Movies { IdMovie = 11, Title = "Blade runner o caçador de androides", LengthMinutes = 160},
+				new Movies { IdMovie = 12, Title = "Homem aranha 2", LengthMinutes = 132 },
+				new Movies { IdMovie = 13, Title = "Iron man", LengthMinutes = 105},
+				new Movies { IdMovie = 14, Title = "Velozes e furiosos", LengthMinutes = 103 },
+				new Movies { IdMovie = 15, Title = "Rocky", LengthMinutes = 100 },
+				new Movies { IdMovie = 16, Title = "Rambo the first blood", LengthMinutes = 90 },
+				new Movies { IdMovie = 17, Title = "Transformers", LengthMinutes = 125 },
+				new Movies { IdMovie = 18, Title = "Carga Explosiva 2", LengthMinutes = 98 }
 				);
 
 			modelBuilder.Entity<Account>().HasData(
 				
-				new Account {IdAccount = 1, Email = "123@gmail.com", Senha = "123"}
+				new Account {IdAccount = 1, Email = "123@gmail.com", Senha = "123"},
+				new Account {IdAccount = 2, Email = "emailgenerico@gmail.com", Senha = "senha123"}
 				);
 		}
 	}

@@ -12,8 +12,8 @@ using RodFlix.Data;
 namespace RodFlix.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230513082138_Third_one")]
-    partial class Third_one
+    [Migration("20230513183308_firstOne")]
+    partial class firstOne
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

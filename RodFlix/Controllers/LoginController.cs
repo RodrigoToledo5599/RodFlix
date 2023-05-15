@@ -9,6 +9,7 @@ namespace RodFlix.Controllers
 	{
 		public readonly AppDbContext _db;
 		private Account? conta;
+		
 
 		public LoginController(AppDbContext db)
 		{
@@ -56,5 +57,8 @@ namespace RodFlix.Controllers
 		}
 
 		#endregion
+
+
+		
 	}
 }

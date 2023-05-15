@@ -7,7 +7,7 @@
 namespace RodFlix.Migrations
 {
     /// <inheritdoc />
-    public partial class aqwijejiwei : Migration
+    public partial class firstOne : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -62,7 +62,11 @@ namespace RodFlix.Migrations
             migrationBuilder.InsertData(
                 table: "Account",
                 columns: new[] { "IdAccount", "Email", "Senha" },
-                values: new object[] { 1, "123@gmail.com", "123" });
+                values: new object[,]
+                {
+                    { 1, "123@gmail.com", "123" },
+                    { 2, "emailgenerico@gmail.com", "senha123" }
+                });
 
             migrationBuilder.InsertData(
                 table: "DmCategories",
@@ -89,24 +93,24 @@ namespace RodFlix.Migrations
                 columns: new[] { "IdMovie", "Categoria1", "Categoria2", "Categoria3", "Categoria4", "Categoria5", "Categoria6", "Description", "LengthMinutes", "Title" },
                 values: new object[,]
                 {
-                    { 1, null, null, null, null, null, null, null, 0, "Carga Explosiva" },
-                    { 2, null, null, null, null, null, null, null, 0, "Sonic o filme" },
-                    { 3, null, null, null, null, null, null, null, 0, "Exterminador do futuro" },
-                    { 4, null, null, null, null, null, null, null, 0, "One piece film red" },
-                    { 5, null, null, null, null, null, null, null, 0, "Avatar" },
-                    { 6, null, null, null, null, null, null, null, 0, "Debi e Loide 2" },
-                    { 7, null, null, null, null, null, null, null, 0, "Zohan" },
-                    { 8, null, null, null, null, null, null, null, 0, "Senhor dos anéis 2" },
-                    { 9, null, null, null, null, null, null, null, 0, "Drive" },
-                    { 10, null, null, null, null, null, null, null, 0, "Taxi Driver" },
-                    { 11, null, null, null, null, null, null, null, 0, "Blade runner o caçador de androides" },
-                    { 12, null, null, null, null, null, null, null, 0, "Homem aranha 2" },
-                    { 13, null, null, null, null, null, null, null, 0, "Iron man" },
-                    { 14, null, null, null, null, null, null, null, 0, "Velozes e furiosos" },
-                    { 15, null, null, null, null, null, null, null, 0, "Rocky" },
-                    { 16, null, null, null, null, null, null, null, 0, "Rambo the first blood" },
-                    { 17, null, null, null, null, null, null, null, 0, "Transformers" },
-                    { 18, null, null, null, null, null, null, null, 0, "Carga Explosiva 2" }
+                    { 1, null, null, null, null, null, null, null, 103, "Carga Explosiva" },
+                    { 2, null, null, null, null, null, null, null, 99, "Sonic o filme" },
+                    { 3, null, null, null, null, null, null, null, 130, "Exterminador do futuro" },
+                    { 4, null, null, null, null, null, null, null, 100, "One piece film red" },
+                    { 5, null, null, null, null, null, null, null, 140, "Avatar" },
+                    { 6, null, null, null, null, null, null, null, 96, "Debi e Loide 2" },
+                    { 7, null, null, null, null, null, null, null, 90, "Zohan" },
+                    { 8, null, null, null, null, null, null, null, 180, "Senhor dos anéis 2" },
+                    { 9, null, null, null, null, null, null, null, 103, "Drive" },
+                    { 10, null, null, null, null, null, null, null, 110, "Taxi Driver" },
+                    { 11, null, null, null, null, null, null, null, 160, "Blade runner o caçador de androides" },
+                    { 12, null, null, null, null, null, null, null, 132, "Homem aranha 2" },
+                    { 13, null, null, null, null, null, null, null, 105, "Iron man" },
+                    { 14, null, null, null, null, null, null, null, 103, "Velozes e furiosos" },
+                    { 15, null, null, null, null, null, null, null, 100, "Rocky" },
+                    { 16, null, null, null, null, null, null, null, 90, "Rambo the first blood" },
+                    { 17, null, null, null, null, null, null, null, 125, "Transformers" },
+                    { 18, null, null, null, null, null, null, null, 98, "Carga Explosiva 2" }
                 });
         }
 

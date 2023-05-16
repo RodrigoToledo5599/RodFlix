@@ -4,16 +4,13 @@
 	<link rel="stylesheet" href="~/css/MainPage/Index/Index.css" />
 </head>
 
-
-
 <body>
 
 	<div class="container">
 		<div class="row pt-4">
 			<div class="col-6">
-				<h1 class="text-secondary">
-					<strong>Filmes</strong>
-					
+				<h1 class="text-primary">
+					<strong class="text-white">Filmes</strong>
 				</h1>
 			</div>
 		</div>
@@ -26,33 +23,28 @@
 
 	<div class="main-content">
 
-		<section>
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
+		<div class="container">
+
+			<div id="" class="slider">
+				@foreach (var obj in Model)
+				{
+					<div class="movie-element">
+
+						<img src="~/Images/imagem_de_Fundo.jpg" style="max-height:192px; max-width:240px">
+
+						<br/>
+						<p class="movie-title">@obj.Title</p>
+						<br/>
+						<br/>
+						<br/>
+
 					</div>
-				</div>
+				}
 			</div>
-
-			<div class="col-12">
-				
-					@foreach(var obj in Model)
-					{
-						<div class="row-fluid movies-row">
-							<img src="~/Images/imagem_de_Fundo.jpg" style="max-height:192px; max-width:240px"> 
-							<p>@obj.Title</p>
-							
-						</div>
-						<br/>
-						<br/>
-						
-					}
-				
- 			</div>
-		</section>
-
+		</div>
 	</div>
 
 </body>
+
 
 <script src="~/js/MainPage/Index/Index.js"></script>

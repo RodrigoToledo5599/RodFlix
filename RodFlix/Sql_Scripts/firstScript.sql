@@ -1,5 +1,5 @@
 ﻿USE RodFlix
 GO
 
-ALTER TABLE 
-ADD FOREIGN KEY ()
+UPDATE Movies
+SET 

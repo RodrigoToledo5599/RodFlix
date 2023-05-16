@@ -1,34 +1,58 @@
 ﻿@model List<Movies>
 
+<head>
+	<link rel="stylesheet" href="~/css/MainPage/Index/Index.css" />
+</head>
 
 
-<div class="container">
-	<div class="row pt-4">
-		<div class="col-6">
-			<h1 class="text-secondary">
-				<strong>Filmes</strong>
-			</h1>
+
+<body>
+
+	<div class="container">
+		<div class="row pt-4">
+			<div class="col-6">
+				<h1 class="text-secondary">
+					<strong>Filmes</strong>
+					
+				</h1>
+			</div>
 		</div>
 	</div>
-</div>
+	
+	<br/>
+	<br/>
+	<br/>
 
-<table class="table table-bordered table-striped">
-	<tbody>
-		@foreach(var obj in Model)
-		{
-			<tr>
-				<td style="border: solid 1px white">
-					
-					<h3>@obj.Title</h3>
-				</td>
-				<td>
-					<p>@obj.Description</p>
-				</td>
-				<td>
-					<hr>
-				</td>
-			</tr>
 
-		}
-	</tbody>
-</table>
+	<div class="main-content">
+
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12">
+				
+					@foreach(var obj in Model)
+					{
+						<div class="row-fluid movies-row">
+							<img src="~/Images/imagem_de_Fundo.jpg" style="max-height:192px; max-width:240px"> 
+							<p>@obj.Title</p>
+							
+						</div>
+						<br/>
+						<br/>
+						
+					}
+				
+ 			</div>
+		</section>
+
+	</div>
+
+</body>
+
+<script src="~/js/MainPage/Index/Index.js"></script>

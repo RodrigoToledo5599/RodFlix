@@ -5,8 +5,6 @@ VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RodFlix", "RodFlix\RodFlix.csproj", "{5D061149-7F6E-4140-9D47-8F099D86D69C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebScrapping", "WebScrapping\WebScrapping.csproj", "{AC128545-DFD0-4C67-A27D-65A44401D6F3}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{5D061149-7F6E-4140-9D47-8F099D86D69C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D061149-7F6E-4140-9D47-8F099D86D69C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D061149-7F6E-4140-9D47-8F099D86D69C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AC128545-DFD0-4C67-A27D-65A44401D6F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AC128545-DFD0-4C67-A27D-65A44401D6F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AC128545-DFD0-4C67-A27D-65A44401D6F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AC128545-DFD0-4C67-A27D-65A44401D6F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

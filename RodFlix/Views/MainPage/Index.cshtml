@@ -1,45 +1,58 @@
 ﻿@model List<Movies>
-
+@{
+	bool variavel = false;
+	
+}
 <head>
 	<link rel="stylesheet" href="~/css/MainPage/Index/Index.css" />
 </head>
 
 <body>
 
-	<div class="container">
-		<div class="row pt-4">
-			<div class="col-6">
-				<h1 class="text-primary">
-					<strong class="text-white">Filmes</strong>
-				</h1>
-			</div>
-		</div>
-	</div>
+	<h1 class="text-primary">
+		<strong class="text-white ">Filmes</strong>
+	</h1>
+			
 	
 	<br/>
 	<br/>
 	<br/>
+	@if (variavel == true)
+	{
+		<h2>
+			CADE O MEU PAL??? AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!!!!!!!!!!!
+		</h2>
+	}
 
+	<div class="main-content p-0 m-0">
 
-	<div class="main-content">
-
-		<div class="container">
+		<div class="container p-0">
 
 			<div id="" class="slider">
-				@foreach (var obj in Model)
-				{
-					<div class="movie-element">
+				<ul class="films-list">
+					@foreach (var obj in Model)
+					{
+						<li>
+							<div class="movie-element bg-primary text-white">
 
-						<img src="~/Images/imagem_de_Fundo.jpg" style="max-height:192px; max-width:240px">
+								<img class="movie-image"src="~/Images/imagem_de_Fundo.jpg" style="max-height:192px; max-width:240px;">
+								<br/>
+								<div class="movie-element" >
+									<p class="movie-title">@obj.Title</p>
+									<br/>
+									@if(obj.LengthMinutes % 2 == 0)
+									{
+										<p>Par e.e</p>
+									}
+									<p class="movie-length">@obj.LengthMinutes minutos</p>
+								</div>
+								<br/>
+								<br/>
 
-						<br/>
-						<p class="movie-title">@obj.Title</p>
-						<br/>
-						<br/>
-						<br/>
-
-					</div>
-				}
+							</div>
+						</li>
+					}
+				</ul>
 			</div>
 		</div>
 	</div>

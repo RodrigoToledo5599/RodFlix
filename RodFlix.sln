@@ -5,6 +5,10 @@ VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RodFlix", "RodFlix\RodFlix.csproj", "{5D061149-7F6E-4140-9D47-8F099D86D69C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RodFlix.Models", "RodFlix.Models\RodFlix.Models.csproj", "{59D641EF-DE24-4E07-9901-3AB0E60A5160}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RodFlix.Data", "RodFlix.Data\RodFlix.Data.csproj", "{482F4777-EDEA-4859-A4DA-060C3E49FCA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{5D061149-7F6E-4140-9D47-8F099D86D69C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D061149-7F6E-4140-9D47-8F099D86D69C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D061149-7F6E-4140-9D47-8F099D86D69C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59D641EF-DE24-4E07-9901-3AB0E60A5160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59D641EF-DE24-4E07-9901-3AB0E60A5160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59D641EF-DE24-4E07-9901-3AB0E60A5160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59D641EF-DE24-4E07-9901-3AB0E60A5160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{482F4777-EDEA-4859-A4DA-060C3E49FCA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{482F4777-EDEA-4859-A4DA-060C3E49FCA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{482F4777-EDEA-4859-A4DA-060C3E49FCA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{482F4777-EDEA-4859-A4DA-060C3E49FCA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

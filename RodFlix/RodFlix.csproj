@@ -27,5 +27,10 @@
 	<ItemGroup>
 	  <Folder Include="wwwroot\js\MainPage\Index\" />
 	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\RodFlix.Data\RodFlix.Data.csproj" />
+	  <ProjectReference Include="..\RodFlix.Models\RodFlix.Models.csproj" />
+	</ItemGroup>
 	
 </Project>

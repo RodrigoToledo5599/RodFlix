@@ -1,28 +1,20 @@
 ﻿* {
-    padding: 0;
+    
 }
 body{
     width:100%; 
     padding:0;
     
 }
-.films-list{
+
+.container{
+    border:0;
+    padding: 40px;
+
+}
+
+.movie-title{
 
 }
 
 
-.slider {
-    display: flex;
-    align-items: baseline;
-    padding: 0;
-}
-
-.movie-element {
-    margin: 5px;
-    border: solid 3px white;
-    border-radius: 1%;
-    display: flex;
-    flex-direction: column;
-    float: left;
-    padding: 0;
-}

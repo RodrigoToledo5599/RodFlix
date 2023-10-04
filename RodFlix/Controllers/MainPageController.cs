@@ -9,7 +9,7 @@ namespace RodFlix.Controllers
 	public class MainPageController : Controller
 	{
 		public readonly AppDbContext _db;
-
+		
 		public MainPageController (AppDbContext db)
 		{
 			_db = db;

@@ -26,7 +26,7 @@ namespace RodFlix.Controllers
 			else
 				return Redirect("/MainPage/Index/");
 		}
-		[HttpGet]
+		
 		public bool CheckUpDeLoginGet(string email, string senha)
 		{
 			conta = _db.Account.Where(c => c.Email == email).FirstOrDefault();

@@ -47,7 +47,9 @@ namespace RodFlix.Data
 				new Movies { IdMovie = 15, Title = "Rocky", LengthMinutes = 100 },
 				new Movies { IdMovie = 16, Title = "Rambo the first blood", LengthMinutes = 90 },
 				new Movies { IdMovie = 17, Title = "Transformers", LengthMinutes = 125 },
-				new Movies { IdMovie = 18, Title = "Carga Explosiva 2", LengthMinutes = 98 }
+				new Movies { IdMovie = 18, Title = "Carga Explosiva 2", LengthMinutes = 98 },
+				new Movies { IdMovie = 19, Title = "Kung Fu Panda 3", LengthMinutes = 99 }
+
 				);
 
 			modelBuilder.Entity<Account>().HasData(
